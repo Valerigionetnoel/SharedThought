@@ -1,0 +1,17 @@
+{
+  "name": "sharedthought",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node utils/seed"
+  },
+  "author": "Valeri Gionet-Noel",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^7.0.2"
+  }
+}

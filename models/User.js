@@ -23,11 +23,11 @@ const userSchema = new Schema(
         },
         thoughts: [Thought],
         friends: [{
-            type: mongoose.Schema.Types.ObjectId,
+            type: Schema.Types.ObjectId,
             ref: 'user'
         }],
     }
-)
+);
 
 const User = model('user', userSchema)
 

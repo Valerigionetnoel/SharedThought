@@ -1,5 +1,5 @@
-const { Schema, model } = require('mongoose')
-const Reaction = require('./Reaction')
+const { Schema, Types, model } = require('mongoose')
+// const Reaction = require('./Reaction')
 
 const thoughtSchema = new Schema(
     {
@@ -30,7 +30,8 @@ const thoughtSchema = new Schema(
 const reactionSchema = new Schema(
     {
         reactionId: {
-            type: Schema.Types.ObjectId
+            type: Schema.Types.ObjectId,
+            default: () => new Types.ObjectId
         },
         reactionBody: {
             type: String,
